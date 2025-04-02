@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "table": "node --watch ./task/multi-table.js",
     "math": "node --watch ./js/10-math.js",
     "function1": "node --watch ./js/function1.js",
     "object": "node --watch ./js/9-object.js",
