@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "valid": "node --watch ./task/valid-name.js",
+    "method": "node --watch ./js/11-method-string.js",
     "table": "node --watch ./task/multi-table.js",
     "math": "node --watch ./js/10-math.js",
     "function1": "node --watch ./js/function1.js",
