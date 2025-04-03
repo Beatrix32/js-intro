@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "arr": "node --watch ./js/13-method-array.js",
     "meth": "node --watch ./js/12-method-number.js",
     "valid": "node --watch ./task/valid-name.js",
     "method": "node --watch ./js/11-method-string.js",

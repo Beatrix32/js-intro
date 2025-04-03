@@ -39,3 +39,10 @@ console.log(parseInt('65.314'));
 console.log(parseInt('-65'));
 console.log(parseInt('-65.314'));
 
+const a = 12.3456789;
+console.log(a);
+console.log(typeof a);
+
+console.log(typeof typeof a);
+console.log(typeof 'number');
+console.log('string');
