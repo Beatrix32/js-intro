@@ -274,3 +274,41 @@ console.log(s4);
 
 const s5 = String.fromCharCode(9845);
 console.log(s5);
+
+console.clear();
+
+console.log('------------');
+
+
+function check(a,x){
+    if (a.includes(x)) {
+      return true;
+    } else {
+      return false;
+    }
+}
+console.log(check([65,37,51], 37));
+console.log(check([65,37,51], 27));
+
+console.log('----------');
+
+function countSheep(sheep) {
+    let sheeps = 0;
+    for (let i = 0; i < sheep.length; i++) {
+      if (sheep[i] === true) {
+        sheeps++;
+      }
+    }
+    return sheeps;
+  }
+  
+  const sheepNumbers = [
+    true, true, true, false,
+    true, true, true, true,
+    true, false, true, false,
+    true, false, false, true,
+    true, true, true, true,
+    false, false, true, true
+  ];
+  
+  console.log(countSheep(sheepNumbers));
