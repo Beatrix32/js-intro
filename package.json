@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "fancy": "node --watch ./task/fancy-math.js",
     "arrow": "node --watch ./js/14-arrow.js",
     "name": "node --watch ./task/names-split-join.js",
     "money": "node --watch ./task/money-format.js",
