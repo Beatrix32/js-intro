@@ -21,7 +21,13 @@ const nameSizes = [];
 
 
 for (const name of names) {
-    nameSizes.push(name.length);
+    nameSizes.push({
+        name: name,
+        firstLetter: name[0],
+        lastLetter: name.at(-1),
+        size: name.length,
+        reverse: name.split('').reverse().join(''),
+    });
 }
 
 console.log(nameSizes);

@@ -1,27 +1,46 @@
-const marks = [10, 2, 8, 4, 6];
-let sum = 0;
+const person = {
+    name: 'Jonas',
+    age: 99,
+    isMarried: true,
+};
 
-for (let i = 0; i < marks.length; i++) {
-    sum += marks[i];
+const keys = Object.keys(person);
+console.log(keys);
+
+for (const key of keys) {
+    console.log(person[key]);
 }
 
-console.log(sum);
-
-let sum2 = 0;
-let i = 0;
-while (i < marks.length) {
-    sum2 += marks[i];
-    i++
+for (const key in person) {
+    console.log(person[key]);
 }
 
 console.log(sum2);
 
-let count = 0;
-let sum3 = 0;
+const text = 'papajus';
+const symbols = {};
 
-while (sum3 < 1000000) {
-    sum3 += count++;
+for (const s of text) {
+    if (symbols[s]) {
+        symbols[s]++;
+    } else {
+        symbols[s] = 1;
+    }
 }
+console.log(symbols);
 
-console.log(count);
-console.log(sum3);
+let max = 0;
+for (const s in symbols) {
+    if (symbols[s] > max) {
+        max = symbols[s];
+    }
+}
+console.log(max);
+
+const maxSymbols = [];
+for (const s in symbols) {
+    if (symbols[s] === max) {
+        maxSymbols.push(s);
+    }
+}
+console.log(maxSymbols);
