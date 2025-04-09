@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "destroy": "node --watch ./js/21-self-destruction-rest.js",
+    "reduce": "node --watch ./js/20-reduce.js",
+    "sort": "node --watch ./js/19-sort.js",
     "forIn": "node --watch ./js/18-for-in.js",
     "while": "node --watch ./js/17-while.js",
     "forOf": "node --watch ./js/16-for-of.js",

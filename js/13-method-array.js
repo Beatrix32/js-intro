@@ -221,3 +221,61 @@ console.log(texts5Updated);
 
 const texts5Updated2 = texts5.filter(t => t);
 console.log(texts5Updated2);
+
+console.log('-----------');
+
+// fill
+const default5 = [0, 0, 0, 0, 0];
+const default7 = Array(7).fill(99);
+console.log(default7);
+
+const zero = Array(10);
+const zeros2 = Array(10).fill(0);
+console.log(zero);
+console.log(zeros2);
+
+const negative = Array(8).fill(false);
+console.log(negative);
+
+const emptySpace = Array(40).fill('');
+console.log(emptySpace);
+
+const hello = Array(5).fill('hello');
+console.log(hello);
+
+const demo = [10, 2, 8, 4, 6];
+console.log(demo);
+
+demo.fill(777);
+console.log(demo);
+
+
+console.clear();
+
+console.log('------------');
+
+// every
+
+const trees = ['oak', 'birch', 'spruce', 'dark oak'];
+const allTreesValid = trees.every(s => s.length > 0);
+console.log(allTreesValid);
+
+const allTreesNameSize5 = trees.every(s => s.length === 5);
+console.log(allTreesNameSize5);
+
+// some
+const someTreesValid = trees.some(s => s.length > 0);
+console.log(someTreesValid);
+
+const someTreesNameSize5 = trees.some(s => s.length === 5);
+console.log(someTreesNameSize5);
+
+const someTreesNameSize10 = trees.some(s => s.length === 10);
+console.log(someTreesNameSize10);
+
+console.clear();
+
+// sort 
+
+
+// reduce
